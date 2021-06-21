@@ -3,16 +3,28 @@
     ViewData["Title"] = "Equipes";
 }
 
-<form method="POST" action='@Url.Action("Cadastrar")'enctype="multipart/form-data">
+<div class="titulo_pagina">
+    <h1>cadastro de @ViewData["Title"]</h1>
+</div>
 
-    <label for="">ID</label>
-    <input type="text" name="IdEquipe" required>
-    <label for="">Nome</label>
-    <input type="text" name="Nome" required>
-    <label for="">Imagem</label>
+<form class="cadastro" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+
+    <div class="campo">
+        <label for="">ID</label>
+        <input type="text" name="IdEquipe" required>
+    </div>
+
+    <div class="campo">
+        <label for="">Nome</label>
+        <input type="text" name="Nome" required>
+    </div>
+
+    <div class="campo">
+      <label for="">Imagem</label>
     <input type="file" name="Imagem" required>
+    </div>
 
-    <button type="submit">Cadastrar</button>
+    <button class="gradient btn" type="submit">Cadastrar</button>
 </form>
 
 <table class="tabçe table-striped table-responsive">
@@ -28,7 +40,8 @@
                 <td>@equipe.IdEquipe</td>
                 <td>@equipe.NomeEquipe</td>
                 <td><img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.NomeEquipe" width="50px"></td>
-                <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"></a>Excluir</td>
+                <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"></a>Excluir
+                </td>
             </tr>
         }
     </tbody>

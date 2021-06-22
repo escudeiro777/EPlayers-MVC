@@ -1,14 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EPlayersMVC</title>
-     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2faae0d38b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
+
 <body>
     <header>
         <div class="container cabecalho">
@@ -19,12 +21,13 @@
                 </a>
 
                 <a href="index.html">
-                    <img src="Images/Logo.svg" alt="Logo do site E-Players">
+                    <img src="/Images/Logo.svg" alt="Logo do site E-Players">
                 </a>
             </div>
             <nav id="menu">
                 <ul>
-                    <li><a href="index.html" title="voltar para a página inicial">INÍCIO</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" index.html
+                            title="voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
                     <li><a href="#resultados" title="Ir até a sessão de resultados das partidas">RESULTADOS</a></li>
                     <li><a href="#noticias" title="Ir até a sessão de notícias">NOTÍCIAS</a></li>
@@ -33,11 +36,10 @@
             </nav>
         </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
 
     <footer>
         <div class="container">
@@ -55,7 +57,7 @@
                 </nav>
             </div>
             <div class="mob_logo_sociais">
-                <img src="Images/Logo.svg" alt="Logo do projeto E-Players">
+                <img src="/Images/Logo.svg" alt="Logo do projeto E-Players">
                 <div class="sociais">
                     <i class="fab fa-facebook-square"></i>
                     <i class="fab fa-instagram-square"></i>
@@ -73,9 +75,10 @@
         </div>
         <p>© Copyrigth 2077 - Todos os direitos reservados ao sena-code</p>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script> 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="~/js/site.js" asp-append-version="true"></script> 
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

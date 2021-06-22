@@ -1,6 +1,6 @@
-@model Equipe
+@model Jogador
 @{
-    ViewData["Title"] = "Equipes";
+    ViewData["Title"] = "Jogadores";
 }
 
 <div class="titulo_pagina">
@@ -8,7 +8,7 @@
 </div>
 
 <form class="cadastro" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
-    
+
     <div class="campo">
         <label for="">ID</label>
         <input type="text" name="IdEquipe" required>
@@ -20,8 +20,12 @@
     </div>
 
     <div class="campo">
-      <label for="">Imagem</label>
-    <input type="file" name="Imagem" required>
+      <label for="">Email</label>
+    <input type="text" name="Email" required>
+    </div>
+    <div class="campo">
+      <label for="">Senha</label>
+    <input type="text" name="Senha" required>
     </div>
 
     <button class="gradient btn" type="submit">Cadastrar</button>
@@ -34,13 +38,12 @@
         <th>Imagem</th>
     </thead>
     <tbody>
-        @foreach (Equipe equipe in ViewBag.Equipes)
+        @foreach (Jogador j in ViewBag.Jogadores)
         {
             <tr>
-                <td>@equipe.IdEquipe</td>
-                <td>@equipe.NomeEquipe</td>
-                <td><img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.NomeEquipe" width="50px"></td>
-                <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+                <td>@j.IdEquipe</td>
+                <td>@j.Nome</td>
+                <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@j.IdJogador">Excluir</a>
                 </td>
             </tr>
         }

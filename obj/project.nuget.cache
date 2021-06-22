@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "94XBcX/fJZlYKu1Rgel80Xg5zNgknkiDx+Ve1mxmGbzG98nWdcX2mNZDUj4y4O7oDhx4InImcWQRxVSl5XPyUg==",
+  "dgSpecHash": "EGd8Z3ML0P3Badq7iR8PwUlEX2uS2eQMIP+2Unt2itMmNEBpiivj/t2dQtegU9IUngCQtDc3nS5FhiRXkAbpTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Desktop\\Backend - MVC\\EPlayersMVC\\EPlayersMVC.csproj",
+  "projectFilePath": "C:\\Users\\dev\\Desktop\\EPlayers-MVC\\EPlayersMVC.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

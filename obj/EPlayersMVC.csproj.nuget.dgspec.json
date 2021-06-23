@@ -1,27 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dev\\Desktop\\EPlayers-MVC\\EPlayersMVC.csproj": {}
+    "C:\\Users\\55119\\Desktop\\Backend - MVC\\EPlayers-MVC\\EPlayersMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dev\\Desktop\\EPlayers-MVC\\EPlayersMVC.csproj": {
+    "C:\\Users\\55119\\Desktop\\Backend - MVC\\EPlayers-MVC\\EPlayersMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dev\\Desktop\\EPlayers-MVC\\EPlayersMVC.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Desktop\\Backend - MVC\\EPlayers-MVC\\EPlayersMVC.csproj",
         "projectName": "EPlayersMVC",
-        "projectPath": "C:\\Users\\dev\\Desktop\\EPlayers-MVC\\EPlayersMVC.csproj",
-        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dev\\Desktop\\EPlayers-MVC\\obj\\",
+        "projectPath": "C:\\Users\\55119\\Desktop\\Backend - MVC\\EPlayers-MVC\\EPlayersMVC.csproj",
+        "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\55119\\Desktop\\Backend - MVC\\EPlayers-MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",

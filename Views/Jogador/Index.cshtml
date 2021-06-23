@@ -10,8 +10,13 @@
 <form class="cadastro" method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
 
     <div class="campo">
-        <label for="">ID</label>
-        <input type="text" name="IdEquipe" required>
+        <label for="">ID Jogador</label>
+        <input type="text" name="Id Jogador" required>
+    </div>
+
+    <div class="campo">
+        <label for="">ID Equipe</label>
+        <input type="text" name="Id Equipe" required>
     </div>
 
     <div class="campo">
@@ -35,16 +40,15 @@
     <thead>
         <th>ID</th>
         <th>Nome</th>
-        <th>Imagem</th>
+        <th>Email</th>
     </thead>
     <tbody>
         @foreach (Jogador j in ViewBag.Jogadores)
         {
             <tr>
-                <td>@j.IdEquipe</td>
+                <td>@j.IdJogador</td>
                 <td>@j.Nome</td>
-                <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@j.IdJogador">Excluir</a>
-                </td>
+                <td>@j.Email</td>
             </tr>
         }
     </tbody>
